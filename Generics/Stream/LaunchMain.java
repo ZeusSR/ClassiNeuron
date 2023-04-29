@@ -39,9 +39,15 @@ public class LaunchMain {
 		
 		
 		Stream<Integer> stream1 = al.stream();
+		System.out.println();
 		
 		Stream<Integer> stream2 = stream1.filter((i)-> i%2==0);
 		stream2.forEach(y->System.out.println(y));
+		
+		System.out.println();
+		Stream<Integer> stream3 = al.stream();
+		Stream<Integer> stream4 = stream3.map((i)-> i*2);
+		stream4.forEach(y->System.out.println(y));
 	}
 
 }
