@@ -48,6 +48,15 @@ public class LaunchMain {
 		Stream<Integer> stream3 = al.stream();
 		Stream<Integer> stream4 = stream3.map((i)-> i*2);
 		stream4.forEach(y->System.out.println(y));
+		
+//		Stream<Integer> stream5 = al.stream();
+//		int res = stream5.reduce(0,(s,r)->s+r);
+//		
+		Stream<Integer> stream5 = al.stream();
+		int res = stream5.filter((i)->i%2==0).map((i)->i*2).reduce(0,(s,r)->s+r);
+		
+		System.out.println(res);
+		
 	}
 
 }
