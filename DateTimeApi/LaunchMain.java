@@ -68,6 +68,16 @@ public class LaunchMain {
 		  LocalDateTime ki = dt.minusYears(28);
 		  System.out.println(ldc);
 		  System.out.println(k+"  "+x+" "+ki);
+		
+			  System.out.println();
+		  
+		  LocalDateTime mt = LocalDateTime.of(2021,11,9,23,12,45);
+		  
+		  System.out.println(mt);
+		  
+		  System.out.println(mt.minusMonths(1));
+		  System.out.println(mt.plusMonths(1));
+		  System.out.println(mt.minusMonths(4));
 		  
 	}
 
