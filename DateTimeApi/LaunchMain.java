@@ -78,6 +78,11 @@ public class LaunchMain {
 		  System.out.println(mt.minusMonths(1));
 		  System.out.println(mt.plusMonths(1));
 		  System.out.println(mt.minusMonths(4));
+		
+		  ZoneId zone = ZoneId.systemDefault();
+		  ZonedDateTime z = ZonedDateTime.now(); 
+		  System.out.println(zone);
+		  System.out.println(z);
 		  
 	}
 
