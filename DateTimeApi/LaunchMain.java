@@ -79,6 +79,10 @@ public class LaunchMain {
 		  System.out.println(mt.plusMonths(1));
 		  System.out.println(mt.minusMonths(4));
 		
+		  LocalDateTime mt1 = LocalDateTime.now();
+		  Period p = Period.between(mt.toLocalDate(),  mt1.toLocalDate());
+		  System.out.println(p);
+		
 		  ZoneId zone = ZoneId.systemDefault();
 		  ZonedDateTime z = ZonedDateTime.now(); 
 		  System.out.println(zone);
