@@ -1,12 +1,11 @@
 package in.innerClass;
 
-/*Here we are seeing an example of annonymous inner class with with interface implementation*/
 public class Annonyinnerclass_implementinginterface {
 
 	public static void main(String[] args) {
 
 		
-//		Runnable r = new Runnable() {
+//	1	Runnable r = new Runnable() {
 //
 //			@Override
 //			public void run() {
@@ -17,18 +16,31 @@ public class Annonyinnerclass_implementinginterface {
 //			
 //		};
 		
+// 2	Thread t = new Thread(new Runnable() {
+//
+//			@Override
+//			public void run() {
+//
+//				System.out.println("Inside implemented class");
+//				
+//			}
+//			
+//		});
+//		t.start();
 		
-		Thread t = new Thread(new Runnable() {
-
-			@Override
-			public void run() {
-
-				System.out.println("Inside implemented class");
-				
-			}
+		 new Thread(new Runnable() {
 			
-		});
-		t.start();
+						@Override
+						public void run() {
+			
+							System.out.println("Inside implemented class");
+							
+						}
+						
+					}).start();;
+
+		
+
 	}
 
 }
