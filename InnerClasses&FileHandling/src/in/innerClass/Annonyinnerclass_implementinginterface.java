@@ -6,7 +6,19 @@ public class Annonyinnerclass_implementinginterface {
 	public static void main(String[] args) {
 
 		
-		Runnable r = new Runnable() {
+//		Runnable r = new Runnable() {
+//
+//			@Override
+//			public void run() {
+//
+//				System.out.println("Inside implemented class");
+//				
+//			}
+//			
+//		};
+		
+		
+		Thread t = new Thread(new Runnable() {
 
 			@Override
 			public void run() {
@@ -15,9 +27,7 @@ public class Annonyinnerclass_implementinginterface {
 				
 			}
 			
-		};
-		
-		Thread t = new Thread(r);
+		});
 		t.start();
 	}
 
