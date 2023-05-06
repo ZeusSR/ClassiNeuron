@@ -15,14 +15,12 @@ public class Outer {
 		
 		System.out.println("In outer main");
 		
-// 		Outer outer = new Outer();
+//		Outer outer = new Outer();
 		
-// 		Inner in = outer.new Inner();
-// 		in.main();
-		
-		
-		new Outer().new Inner().main();
+//		Inner in = outer.new Inner();
+//		in.main();
 
+		new Outer().new Inner().main();
 		
 	}
 
