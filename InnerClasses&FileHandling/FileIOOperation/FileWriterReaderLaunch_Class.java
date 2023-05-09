@@ -1,4 +1,4 @@
-package in.FileIOOperation;
+package inFileIOOperation;
 
 import java.io.File;
 import java.io.FileReader;
@@ -10,23 +10,38 @@ public class FileWriterReaderLaunch_Class {
 	public static void main(String[] args) throws IOException {
 
 
-		File f = new File("E:\\JAVA\\Basics\\InnerClass&FileHandling\\IPLDir\\CSK.txt");
-		char[] a= {'C','S','K'};
+//		File f = new File("C:\\Users\\somesh.rout\\eclipse-workspace\\InnerClasses&FileHandling\\IPLdir\\csk.txt");
+//		char[] a= {'C','S','K'};
+//		
+//		FileWriter fw = new FileWriter(f);
+//		fw.write(a);
+//		fw.write("\n MS Dhoni");
+//		fw.write("\n Deshpande");
+//		fw.write("\n Conway");
+//		
+//		fw.flush();
+//		fw.close();
 		
-		FileWriter fw = new FileWriter(f);
-		fw.write(a);
-		fw.write("\n MS Dhoni");
-		fw.write("\n Deshpande");
-		fw.write("\n Conway");
+		File f = new File("C:\\Users\\somesh.rout\\eclipse-workspace\\InnerClasses&FileHandling\\IPLdir\\csk.txt");
+		FileReader fr = new FileReader("C:\\Users\\somesh.rout\\eclipse-workspace\\InnerClasses&FileHandling\\IPLdir\\csk.txt");
+//		int i=fr.read();
+//
+//		while(i!=-1)
+//		{	
+//			
+//		System.out.println((char)i);
+//		 i=fr.read();
+//		}
 		
-		fw.flush();
-		fw.close();
+		char[] c = new char[(int) f.length()];
 		
+		fr.read(c);
 		
-//		FileReader fr = new FileReader(f);
-//		fr.read();
-//		System.out.println(fr);
+		for(char ch:c)
+		{	System.out.print(ch);
+		}
 		
+		fr.close();
 	}
 
 }
