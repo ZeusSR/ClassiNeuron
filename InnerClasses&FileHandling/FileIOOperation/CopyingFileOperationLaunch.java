@@ -34,11 +34,20 @@ public class CopyingFileOperationLaunch {
         String s1 =breq.readLine();
 		while(s != null ||s1!=null)
 		{
+			if(s !=null )
+			{	
 			  pw.println(s);
 			s = brq.readLine();
+			}
+			if(s1 !=null)
+			{	
 			pw.println(s1);
 			s1 =breq.readLine();
-		}
+		
+			}
+			
+		}	
+			
 		
 		  
 			
