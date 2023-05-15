@@ -11,12 +11,23 @@ import java.io.Serializable;
 //class Repository implements Serializable
 //{
 //	int k=21;
+//    public Repository() {
+//	super();
+//	
+//	System.out.println("Repository constructor calling");
 //}
 //class Model extends Repository
 //{
-////	int k;
-//	int i= 23;
-//	int j=34;
+   
+//int l=22;
+//
+//public Model() {
+//	super();
+//	
+//	System.out.println("Model constructor calling");
+//}
+
+
 //}
 class Repository 
 {
@@ -31,9 +42,8 @@ class Repository
 }
 class Model extends Repository implements Serializable
 {
-//	int k;
-	int i= 23;
-	int j=34;
+	int l=22;
+
 	public Model() {
 		super();
 		
@@ -48,6 +58,8 @@ public class inhertanceSerilizationDeserilization {
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		
 		Model m = new Model();
+		m.k= 89;
+		m.l=76;
 		
 		FileOutputStream fo = new FileOutputStream("werto.ser");
 		ObjectOutputStream oos = new ObjectOutputStream(fo);
@@ -57,7 +69,7 @@ public class inhertanceSerilizationDeserilization {
 		FileInputStream fis = new FileInputStream("werto.ser");
 		ObjectInputStream ois = new ObjectInputStream(fis);
 		Model m1 = (Model)ois.readObject();
-		System.out.println(m1.i+"===========>"+m1.j+" ,\n"+m1.k);
+		System.out.println(m1.k+"===========>"+m1.l);
 		
 
 	}
