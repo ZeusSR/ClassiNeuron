@@ -29,7 +29,7 @@ public class singleTONEXP_Main {
 
 	public static void main(String[] args) {
 
-		
+		//Static Factory methods
 		qwerty r1 = qwerty.getObj();
 		qwerty r2 = qwerty.getObj();
 		
