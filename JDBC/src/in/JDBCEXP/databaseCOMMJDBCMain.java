@@ -48,3 +48,9 @@ public class databaseCOMMJDBCMain {
 	}
 
 }
+// OUTPUT:
+// sid	sname
+// 4	qam
+// 1	ram
+// 2	Sam
+// 3	Wam
