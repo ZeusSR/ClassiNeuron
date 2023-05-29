@@ -35,11 +35,15 @@ public class OperatioJdbcMainLaunch {
 			{
 				
 				ps = connection.prepareStatement(sqlquery);
-				ps.setInt(1, int_id);
-				ps.setString(2, vch_name);
-				int no = ps.executeUpdate();
-				System.out.println("No. of rows affected: "+no);
-			}
+				if(ps != null)
+				{	
+				  ps.setInt(1, int_id);
+				  ps.setString(2, vch_name);
+				  int no = ps.executeUpdate();
+				  System.out.println("No. of rows affected: "+no);
+			
+				}
+			}	
 		}
 		catch(SQLException se)
 		{
