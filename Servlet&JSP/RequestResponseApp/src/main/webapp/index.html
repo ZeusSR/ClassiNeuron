@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Page</title>
+</head>
+<body bgcolor="orange" text="white">
+	<center>
+		<h1>Meta Technologies</h1>
+	</center>
+	
+	<form action="./reg" method="post">
+		<table align="center">
+			<tr>
+				<th>Name</th>
+			    <td><input type="text" name="username"> </td>
+			</tr>
+		     <tr>
+				<th>Contact Number	</th>
+			    <td><input type="text" name="contactnumber"> </td>
+			</tr>
+			<tr>
+				<th>E-mail</th>
+			    <td><input type="text" inputmode="email" name="mail"> </td>
+			</tr>
+		   	<tr>
+				<th>Select Course</th>
+			    <td>
+					<select name="courses" multiple = "multiple" >
+						<option value="corejava">Core Java</option>
+						<option value="springcore">Spring Core</option>
+						<option value="springboot">Spring Boot</option>
+						<option value="nextjs">Nextjs</option>					
+					</select>
+		        </td>
+			</tr>
+			<tr>
+			<th></th>	
+			<td><input type="submit"  name="submit"> </td>
+			</tr>
+		</table>
+	</form>
+	
+
+</body>
+</html>
