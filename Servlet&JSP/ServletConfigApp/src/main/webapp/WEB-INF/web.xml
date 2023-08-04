@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>ServletConfigApp</display-name>
+  <servlet>
+    <description></description>
+    <display-name>ConfigLaunch</display-name>
+    <servlet-name>ConfigLaunch</servlet-name>
+    <servlet-class>in.neura.controller.ConfigLaunch</servlet-class>
+    <init-param>
+      <param-name>Source</param-name>
+      <param-value>Java</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConfigLaunch</servlet-name>
+    <url-pattern>/Config</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Config2Launch</display-name>
+    <servlet-name>Config2Launch</servlet-name>
+    <servlet-class>in.neura.controller.Config2Launch</servlet-class>
+        <init-param>
+      <param-name>Source2</param-name>
+      <param-value>Springboot</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Config2Launch</servlet-name>
+    <url-pattern>/Config2</url-pattern>
+  </servlet-mapping>
+</web-app>
