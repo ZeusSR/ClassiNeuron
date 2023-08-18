@@ -33,7 +33,8 @@ public class FinalServlet extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 
-		out.println("<body bgcolor='lightgreen'");
+		out.println("<body bgcolor='lightgreen'>");
+		out.println("<center>");
 		out.println("<table bgcolor='green' border='3'");
 		out.println("<tr><th>Account Number :</th><td>"+accn_no+"</td></tr>");
 		out.println("<tr><th>Account Name :</th><td>"+accn_name+"</td></tr>");
@@ -42,6 +43,7 @@ public class FinalServlet extends HttpServlet {
 		out.println("<tr><th>Depositor Name :</th><td>"+depo_name+"</td></tr>");
 		out.println("<tr><th>Deposited Amount :</th><td>"+depo_amnt+"</td></tr>");
 		out.println("</table>");
+		out.println("</center>");
 		out.println("</body>");
 	}
 

@@ -30,7 +30,7 @@ public class FirstServlet extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		
-		out.println("<body bgcolor='lightgreen' ");
+		out.println("<body bgcolor='lightgreen' >");
 		out.println("<center>");
 		out.println("<form method='get' action='"+response.encodeURL("./2")+"'> ");
 		out.println("<table>");
