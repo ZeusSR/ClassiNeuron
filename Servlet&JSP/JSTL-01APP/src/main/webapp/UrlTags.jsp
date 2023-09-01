@@ -9,11 +9,17 @@
 <h1 style = "color:cyan;text-align:center">
 Welcome to neuralnet::
 
-<c:import url="UrlTags2.jsp">
+<%-- <c:import url="UrlTags2.jsp"> --%>
+<%-- <c:param name="SpringFramework" value="JAVA"></c:param> --%>
+<%-- <c:param name="Blazor" value="C#"></c:param> --%>
+<%-- <c:param name="NextJS" value="React.js"></c:param> --%>
+<%-- </c:import> --%>
+
+<c:redirect url="UrlTags2.jsp">
 <c:param name="SpringFramework" value="JAVA"></c:param>
 <c:param name="Blazor" value="C#"></c:param>
 <c:param name="NextJS" value="React.js"></c:param>
-</c:import>
+</c:redirect>
 
 </h1>
 
